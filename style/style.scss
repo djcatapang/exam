@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+@import 'mixins';
+@import 'header';
+@import 'main'; 
+@import 'article';
+@import 'textSlider';
+@import 'end-section';
+@import 'swiper';
+@import 'footer';
+@import 'custom-fa';
+
+
+
+
+
+
+
+.title h1 {
+  color: #f2714f;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.bg-white {
+  background: white;
+}
+
+.title-green h1 {
+  color: #acb73a;
+}
+
+
+@media(max-width: 1600px){
+  .container{
+    width: 100%;
+  }
+}
+  
+  @media(max-width:1024px){
+    // .container {
+    //   position: fixed;
+    //   background: white;
+    // }
+
+    .hamburger{
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 60px;
+      // gap: 0;
+      flex-direction: column;
+      background-color: #262626;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      height: auto;
+      z-index: 9999;
+    }
+  
+    .nav-item{
+      margin: 16px 0;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+    
+  }
+  
+  
+
+  @media(max-width: 768px) {
+    article .article-main .article-content {
+      grid-auto-flow: row;
+    }
+    footer .grid-footer .footer-content {
+      grid-auto-flow: row;
+    }
+    
+    .content-1 img {
+      width: auto;
+      margin: auto;
+      padding-top: 10px;
+    }
+  
+    footer .grid-footer .footer-content .content-1 {
+      display: grid;
+      grid-auto-flow: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 2rem;
+    }
+  
+    footer .grid-footer .footer-content .content-2 {
+      grid-auto-flow: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+    
+    footer .grid-footer .footer-content .content-1 .icons {
+      grid-auto-flow: row;
+    }
+  }
+
+
+  @media(max-width: 426px) {
+
+  .end-section .section-height .grid-section {
+    grid-template-columns: unset;
+  }
+
+  
+
+ }
+
+  @media(max-width: 320px) {
+    .nav-menu{
+      top: 70px;
+    }
+  }
+  

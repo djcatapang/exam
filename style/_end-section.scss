@@ -1,0 +1,41 @@
+.end-section {
+    min-height: 50vh;
+    background: #f26641;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .section-height {
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+
+            .font-white {
+                
+                p {
+                    color: white;
+                }
+                
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        .to-center {
+            text-align: center;
+
+            .image1 {
+                width: auto;
+                height: 250px;
+                max-height: 100%;
+            }
+        }
+
+    }
+}

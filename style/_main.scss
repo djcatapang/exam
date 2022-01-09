@@ -1,0 +1,18 @@
+main {
+    min-height: 70vh;
+    background: linear-gradient(98deg, rgba(242,102,65,1) 25%, rgba(67,39,32,1) 100%);
+    background-position: center;
+    background-size: cover;
+    @include text-positioning();
+    .main-content {
+        @include content-width();
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        p {
+            color: white;
+        }
+    }
+}
+

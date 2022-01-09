@@ -1,0 +1,11 @@
+@mixin content-width {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@mixin text-positioning {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+}
+

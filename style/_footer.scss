@@ -1,0 +1,52 @@
+footer {
+    background: #4d4d4d;
+    min-height: 10vh;
+    display: grid;
+    align-items: center;
+    
+    .grid-footer {
+        width: 95%;
+        margin: auto;
+
+        .footer-content {
+            display: grid;
+            grid-auto-flow: column;
+
+            .content-1 {
+                display: grid;
+                grid-auto-flow: column;
+                align-items: center;
+
+                .icons {
+                    display: grid;
+                    grid-auto-flow: column;
+                }
+
+            }
+
+            .content-2 {
+                display: grid;
+                grid-auto-flow: column;
+                align-items: center;
+                justify-content: end;
+                gap: 30px;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
